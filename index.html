@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT STUDY PORTAL</title>
+</head>
+<body>
+    <h1>STUDENT STUDY PORTAL</h1>
+    <P>A simple pure HTML site to collect signups and share study videos and notes</P>
+<nav>
+    <a href="#home">Home</a> |
+    <a href="#topics">Topics</a> |
+    <a href="#videos">Videos</a> |
+    <a href="#signup">Sign up</a> |
+</nav>
+<main>
+    <section id="home">
+    <h2>Welcome students 👋</h2>
+    <p>This lightweight page is built using <strong>only HTML</strong>.Use the links above to jump to sections.Below is a quick table listing the topics available on this page.</p>
+    <h3 id="topics">Topics covered</h3>
+    <table border="1" cellpadding="5" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Topics</th>
+                <th>Description</th>
+                <th>Jump to</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTML basics</td>
+                <td>Tags,structure,semantics and basic examples</td>
+                <td><a href="#html-basics">Go</a></td>
+            </tr>
+            <tr>
+                <td>Study videos</td>
+                <td>Embedded or linked videos for quicl lessons and revisions</td>
+                <td><a href="#videos">Go</a></td>
+            </tr>
+            <tr>
+                <td>Resources and links</td>
+                <td>Useful external channels and pages for deeper learning.</td>
+                <td><a href="#resources">Go</a></td>
+            </tr>
+        </tbody>
+    </table>
+    </section>
+    <section id="html-basics">
+        <h3>HTML Basics(quick notes)</h3>
+        <ul>
+            <li><strong>&lt;!doctype html&gt;</strong> - tells browser it's HTML5</li>
+            <li><strong>&lt;head&gt;</strong> - metadata, title and styles</li>
+            <li><strong>&lt;body&gt;</strong> - visible page content</li>
+            <li><strong>Semantic tags</strong> - &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;section&gt;, &lt;footer&gt;</li>
+            <li><strong>Forms</strong> - use &lt;form&gt;, &lt;input&gt;, &lt;select&gt; and &lt;button&gt;</li>
+        </ul>
+    </section>
+    <section id="videos">
+        <h3>Study videos(links+iframes)</h3>
+        <p>Below are some useful channels and example embedded players.</p>
+        <div id="resources">
+            <strong>Useful channels(open in new tab):</strong>
+            <ul>
+                <li>
+                    <a href="https://youtube.com/@apnacollegeofficial?si=n_eoYtdrIDcMHQ66" target="_blank">Apna college</a>
+                    <a href="https://youtube.com/@codewithharry?si=FOBEK3nwSLH2Y_Iu" target="_blank">Code with Harry</a>
+                    <a href="https://youtube.com/@freecodecamp?si=eWxDt3LOLLfLw5ze" target="_blank">Freecodecamp.org</a>
+                </li>
+            </ul>
+        </div>
+        <h4>Video 1-Example</h4>
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/HcOc7P5BMi4" title="HTML Tutorial for Beginners | Complete HTML with Notes &amp; Code" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>" title="Study video 1" frameborder="0" allowfullscreen></iframe>
+
+        <h4>Video 2-Example</h4>
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/BsDoLVMnmZs" title="HTML Tutorial For Beginners In Hindi (With Notes) 🔥" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>" title="Study video 2" frameborder="0" allowfullscreen></iframe>
+
+        <h4>Video 3-Example</h4>
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/kUMe1FH4CHE" title="Learn HTML – Full Tutorial for Beginners" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>" title="Study video 3" frameborder="0" allowfullscreen></iframe>
+    </section>
+ <section id ="signup">
+    <h3>Sign up form</h3>
+    <form action="#" method="post">
+        <label for="fullname">Full name:</label>
+        <input id="fullname" name="fullname" type="text" placeholder="Your name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input id="email" name="email" type="email" placeholder="@youremail.com" required><br><br>
+
+        <label for="password">Password:</label>
+        <input id="password" name="password" type="password" placeholder="password" required><br><br>
+
+        <label for="course">Course/subject:</label>
+        <select id="course" name="course">
+            <option>Computer Science</option>
+            <option>Physics</option>
+            <option>Chemistry</option>
+            <option>Mathematics</option>
+            <option>Biology</option>
+            <option>Other</option>
+        </select><br><br>
+
+        <label for="Year">Year/Semester:</label>
+        <input id="year" name="year" type="text" placeholder="year/semester" required><br><br>
+       <button type="submit">Create account</button>
+    </form>
+   </section>
+</main>
+   <footer>
+    <p>@ Student portal-Built with only HTML.</p>
+   </footer>
+   </body>
+ </html>
